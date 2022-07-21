@@ -22,7 +22,7 @@ function idcui_preprocess_page(&$variables) {
           'field_member_of' => $variables['node']->id(),
         ]);
 
-        $children_media_links = array();
+        $children_media_links = [];
 
         foreach ($children as $child_node) {
           $child_media_links = buildFileUrls($variables, $child_node->id());
